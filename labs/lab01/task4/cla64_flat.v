@@ -60,7 +60,7 @@ module cla64_flat(
   // both checks.
   //
   // TODO: paste your verified assign statements for c[1] through c[64] here.
- assign #(2) c[1] = (g[0]) | (p[0] & cin);
+assign #(2) c[1] = (g[0]) | (p[0] & cin);
 assign #(2) c[2] = (g[1]) | (p[1] & g[0]) | (p[1] & p[0] & cin);
 assign #(2) c[3] = (g[2]) | (p[2] & g[1]) | (p[2] & p[1] & g[0]) | (p[2] & p[1] & p[0] & cin);
 assign #(2) c[4] = (g[3]) | (p[3] & g[2]) | (p[3] & p[2] & g[1]) | (p[3] & p[2] & p[1] & g[0]) | (p[3] & p[2] & p[1] & p[0] & cin);
@@ -129,6 +129,7 @@ assign #(2) c[64] = (g[63]) | (p[63] & g[62]) | (p[63] & p[62] & g[61]) | (p[63]
   // ---------------------------------------------------------------------
   // Step 3: sum bits
   // ---------------------------------------------------------------------
-  // TODO: assign #(2) sum = p ^ {c[63:1], cin};
+  // TODO: 
+assign #(2) sum = p ^ {c[63:1], cin};
 
 endmodule
