@@ -35,5 +35,39 @@ module cla64_hier(
 );
 
   // TODO: your hierarchical design goes here.
+  //Gblk_k = G(4k-1) xor G(4k-2) ..
+  //Pblk_k = Gblk_k-1 
+  Gblk_0 = cout 
+  Gblk_1
+  Gblk_2
+  Gblk_3
+  Gblk_4
+  Gblk_5
+  Gblk_6
+  Gblk_7
+  Gblk_8
+  Gblk_9
+  Gblk_10
+  Gblk_11
+  Gblk_12
+  Gblk_13
+  Gblk_14
+  Gblk_15 
 
+  Pblk_0
+  Pblk_1
+  Pblk_2
+  Pblk_3
+  Pblk_4
+  Pblk_5
+  Pblk_6
+  Pblk_7
+  Pblk_8
+  Pblk_9
+  Pblk_10
+  Pblk_11
+  Pblk_12
+  Pblk_13
+  Pblk_14
+  Pblk_15
 endmodule
